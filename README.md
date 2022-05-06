@@ -23,8 +23,8 @@ In order to meet The Five Pillars of Well Architect Framework I created the VM u
 down and to meet Cost Optimization Pillar by only using what I need. The whole environment is completely automated so if 
 something fails in the future you can reliably recreate the environment from here meeting the Reliability Pillar to recover 
 from disaster. The Security Pillar of the environment is built into Guacamole, I can open port 8443 to the internet, however
-no one can get in without a Guacamole login, I also have SSH set to only allow traffic in from the source port 8443 and the
-public IP of the VM in order to create a secure environment that only allows connections through Guacamole. With setup being 
+no one can get in without a Guacamole login, I also have SSH set to only allow traffic in from the source port 8443
+in order to create a secure environment that only allows connections through Guacamole. With setup being 
 automated it does reach Operational Excellence Pillar by limiting human error The deployment is also complete layed out with 
 in this Read,md file to keep the deployment predictable. I do not meet Performance efficiency Pillar in its 
 current state as I have one IaaS Environment running all my services, once I include a load balancer and a second server to 
