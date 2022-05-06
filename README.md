@@ -22,7 +22,7 @@ have it now.
 In order to meet the five pillars of well archietech framework I created the VM using very little reasouces to keep the cost
 down, The whole enviorment is completely automated so if something fails in the future you can reliably recreate the enviorment
 from here, The security of the enviorment is built into Guacamole, I can open port 8443 to the internet, however no one can get
-in with out a Guacamole login, I also can have SSH only allow traffic in from the source port 8443 or Guacamole creating a 
-secure enviorment that only allows connections through Guacamole. 
+in with out a Guacamole login, I also have SSH only allow traffic in from the source port 8443 and the public IP of the VM in
+order to create a secure enviorment that only allows connections through Guacamole. 
 
 To deploy this in azure the peervm.json file just need to be loaded into Azure and it will walk you through the rest, once the vm is created and deployed make your way to the website HTTPS://hostname:8443 replace hostname with your dns name or ip address The default login is listed above.
