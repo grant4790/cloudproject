@@ -4,7 +4,7 @@
   "parameters": {
     "vmName": {
       "type": "string",
-      "defaultValue": "peervm",
+      "defaultValue": "GuacServer",
       "metadata": {
         "description": "The name of you Virtual Machine."
       }
@@ -154,7 +154,7 @@
            {
             "name": "ssh",
             "properties": {
-              "priority": 1000,
+              "priority": 1001,
               "protocol": "TCP",
               "access": "Allow",
               "direction": "Inbound",
@@ -167,7 +167,7 @@
           {
             "name": "Guac_HTTPS",
             "properties": {
-              "priority": 1001,
+              "priority": 1002,
               "protocol": "TCP",
               "access": "Allow",
               "direction": "Inbound",
@@ -260,7 +260,7 @@
       }
     },
     {
-      "name": "peervm/docker",
+      "name": "GuacServer/docker",
       "type": "Microsoft.Compute/virtualMachines/extensions",
       "apiVersion": "2019-07-01",
       "location": "[resourceGroup().location]",
