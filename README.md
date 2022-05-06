@@ -27,8 +27,8 @@ of the environment is built into Guacamole, I can open port 8443 to the internet
 in without a Guacamole login, I also have SSH set to only allow traffic in from the source port 8443 and the public IP of the
 VM in order to create a secure environment that only allows connections through Guacamole. With setup being automated it does 
 reach operational excellence by limiting human error. I do not meet Performance efficiency in its current state as I have one 
-IaaS Environment running all my services, Once I include a load balancer and off load the data base Performance efficiency will
-be met.
+IaaS Environment running all my services, Once I include a load balancer and a second server to optimize usage and off load 
+the data base Performance efficiency will be met.
 
 To deploy this in azure the peervm.json file just need to be loaded into Azure and it will walk you through the rest, once the 
 vm is created and deployed make your way to the website HTTPS://hostname:8443 replace hostname with your dns name or ip address
