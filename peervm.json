@@ -158,8 +158,8 @@
               "protocol": "TCP",
               "access": "Allow",
               "direction": "Inbound",
-              "sourceAddressPrefix": "*",
-              "sourcePortRange": "*",
+              "sourceAddressPrefix": "20.288.138.76",
+              "sourcePortRange": "8443",
               "destinationAddressPrefix": "*",
               "destinationPortRange": "22"
             }
