@@ -159,7 +159,7 @@
               "access": "Allow",
               "direction": "Inbound",
               "sourceAddressPrefix": "*",
-              "sourcePortRange": "8443",
+              "sourcePortRange": "*",
               "destinationAddressPrefix": "*",
               "destinationPortRange": "22"
             }
