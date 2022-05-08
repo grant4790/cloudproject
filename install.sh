@@ -16,10 +16,3 @@ git clone "https://github.com/boschkundendienst/guacamole-docker-compose.git"
 cd guacamole-docker-compose
 sudo bash prepare.sh
 docker-compose up -d
-
-# Checking Web Service Status
-echo "Waiting for web services."
-until $(curl --output /dev/null --silent --head --fail http://127.0.0.1:8443); do
-    printf '.'
-    sleep 5
-done
