@@ -5,6 +5,9 @@ Default logins for guac
 #     Password: guacadmin
 
 
+Description
+
+
 This is my ST: Cloud Computing project
 I used IaaS to create an ubuntu VM,
 I chose to use IaaS because I wanted to have full control of the platform I was working on.
@@ -19,6 +22,8 @@ In the future I would like to off load the Postgress container to an SQL databas
 points of failure, I would also like to load balance the web server between two Ubuntu servers instead of a single one like I
 have it now.
 
+Well Architect Framework Pillars
+
 In order to meet The Five Pillars of Well Architect Framework I created the VM using very little resources to keep the cost
 down and to meet Cost Optimization Pillar by only using what I need. The whole environment is completely automated so if 
 something fails in the future you can reliably recreate the environment from here meeting the Reliability Pillar to recover 
@@ -29,6 +34,8 @@ automated it does reach Operational Excellence Pillar by limiting human error Th
 in this Read,md file to keep the deployment predictable. I do not meet Performance efficiency Pillar in its 
 current state as I have one IaaS Environment running all my services, once I include a load balancer and a second server to 
 optimize usage and off load  the data base Performance Efficiency Pillar will be met.
+
+Intructions
 
 To deploy this in azure the peervm.json file just need to be loaded into Azure and it will walk you through the rest, once the 
 vm is created and deployed make your way to the website HTTPS://hostname:8443 replace hostname with your dns name or ip address
