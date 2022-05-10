@@ -5,6 +5,25 @@ Default logins for guac
 #     Password: guacadmin
 
 
+# Intructions
+
+- To deploy this in azure take the peervm.json file 
+- The file needs to be loaded into Azure
+- it will take you to the vm creation screen 
+- make an admin user
+- make an admin password
+- select a reasource group to store the VM
+- select create
+- select create again
+- watch it deploy
+- go to https://hostname:8443 replace hostname with your public IP
+- log in with the login above
+- CREATE A NEW ADMIN USER, anyone can use your ip and that log in to get into your VM
+- log in with new admin user
+- DELETE DEFAULT LOGIN
+- add connections to guacamole
+
+
 # Description
 
 
@@ -35,20 +54,4 @@ in this Read,md file to keep the deployment predictable. I do not meet Performan
 current state as I have one IaaS Environment running all my services, once I include a load balancer and a second server to 
 optimize usage and off load  the data base Performance Efficiency Pillar will be met.
 
-# Intructions
 
-- To deploy this in azure take the peervm.json file 
-- The file needs to be loaded into Azure
-- it will take you to the vm creation screen 
-- make an admin user
-- make an admin password
-- select a reasource group to store the VM
-- select create
-- select create again
-- watch it deploy
-- go to https://hostname:8443 replace hostname with your public IP
-- log in with the login above
-- CREATE A NEW ADMIN USER, anyone can use your ip and that log in to get into your VM
-- log in with new admin user
-- DELETE DEFAULT LOGIN
-- add connections to guacamole
