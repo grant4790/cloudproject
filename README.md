@@ -1,7 +1,7 @@
 # cloudproject
 Default logins for guac
-#   Username: guacadmin
-#   Password: guacadmin
+##   Username: guacadmin
+##   Password: guacadmin
 
 
 # Intructions
