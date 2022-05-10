@@ -1,5 +1,5 @@
 # cloudproject
-Default logins for guac
+Default logins for guacamole
 ##   Username: guacadmin
 ##   Password: guacadmin
 
