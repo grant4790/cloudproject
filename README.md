@@ -37,18 +37,18 @@ optimize usage and off load  the data base Performance Efficiency Pillar will be
 
 # Intructions
 
--To deploy this in azure take the peervm.json file 
--The file needs to be loaded into Azure
--it will take you to the vm creation screen 
--make an admin user
--make an admin password
--select a reasource group to store the VM
--select create
--select create again
--watch it deploy
--go to https://hostname:8443 replace hostname with your public IP
--log in with the login above
--CREATE A NEW ADMIN USER, anyone can use your ip and that log in to get into your VM
--log in with new admin user
--DELETE DEFAULT LOGIN
--add connections to guacamole
+- To deploy this in azure take the peervm.json file 
+- The file needs to be loaded into Azure
+- it will take you to the vm creation screen 
+- make an admin user
+- make an admin password
+- select a reasource group to store the VM
+- select create
+- select create again
+- watch it deploy
+- go to https://hostname:8443 replace hostname with your public IP
+- log in with the login above
+- CREATE A NEW ADMIN USER, anyone can use your ip and that log in to get into your VM
+- log in with new admin user
+- DELETE DEFAULT LOGIN
+- add connections to guacamole
