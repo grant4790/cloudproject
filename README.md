@@ -22,7 +22,7 @@ In the future I would like to off load the Postgress container to an SQL databas
 points of failure, I would also like to load balance the web server between two Ubuntu servers instead of a single one like I
 have it now.
 
-# Well Architect Framework Pillars
+# Well-Architected Framework Pillars
 
 In order to meet The Five Pillars of Well Architect Framework I created the VM using very little resources to keep the cost
 down and to meet Cost Optimization Pillar by only using what I need. The whole environment is completely automated so if 
@@ -37,6 +37,18 @@ optimize usage and off load  the data base Performance Efficiency Pillar will be
 
 # Intructions
 
-To deploy this in azure the peervm.json file just need to be loaded into Azure and it will walk you through the rest, once the 
-vm is created and deployed make your way to the website HTTPS://hostname:8443 replace hostname with your dns name or ip address
-The default login is listed above.
+-To deploy this in azure take the peervm.json file 
+-The file needs to be loaded into Azure
+-it will take you to the vm creation screen 
+-make an admin user
+-make an admin password
+-select a reasource group to store the VM
+-select create
+-select create again
+-watch it deploy
+-go to https://hostname:8443 replace hostname with your public IP
+-log in with the login above
+-CREATE A NEW ADMIN USER, anyone can use your ip and that log in to get into your VM
+-log in with new admin user
+-DELETE DEFAULT LOGIN
+-add connections to guacamole
