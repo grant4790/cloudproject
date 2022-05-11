@@ -38,7 +38,10 @@ This web page allows users to remote into almost any machine or container on a n
 Users and Groups can be created to limit permissions and allow for a secure environment.
 In the future I would like to off load the Postgress container to an SQL database directly in azure to help eliminate single
 points of failure, I would also like to load balance the web server between two Ubuntu servers instead of a single one like I
-have it now.
+have it now. The VM can be monitored in azure monitor softwhere where alerts can be set to state when or if the VM goes down. I would 
+also like to implement a way of back ups by having the docker images take snapshots of them selves and save them to the linux VM then the linux VM can 
+save its data to a remote site. Guacamole also monitors connections with in the web page, which can be used to view active and past connections at what thime and where
+from.
 
 # Well-Architected Framework Pillars
 
@@ -46,7 +49,8 @@ In order to meet The Five Pillars of Well Architect Framework I created the VM u
 down and to meet Cost Optimization Pillar by only using what I need. The whole environment is completely automated so if 
 something fails in the future you can reliably recreate the environment from here meeting the Reliability Pillar to recover 
 from disaster in version 2.0 all the connections and users will be off loaded to the SQL database reasource instead of on the linux server, thus
-presurving some data. The Security Pillar of the environment is built into Guacamole, I can open port 8443 to the internet, however
+presurving some data, Also by adding more regions to deploy the server with a load balencers between the regions would lessen downtime. The Security Pillar of the
+environment is built into Guacamole, I can open port 8443 to the internet, however
 no one can get in without a Guacamole login, I also have SSH open however that requires a log in to access as well.
 in order to create a secure environment that only allows connections through Guacamole. With setup being 
 automated it does reach Operational Excellence Pillar by limiting human error The deployment is also complete layed out with 
